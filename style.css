@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  background-color: white;
+  background-image: linear-gradient(red, yellow);
+}
+.menu{
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+}
+.design{
+  text-decoration: none;
+  font-weight: bold;
+}
+.divider:after,
+.divider:before{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom{
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px){
+  .h-custom {
+    height: 100%;
+  }
+}
+.total{
+  padding: 0 5%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.total h5, .total h4{
+  font-weight: bold;
+}
+.table-container{
+  padding: 0 5%;
+  margin: 40px auto 0;
+}
+.heading{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead{
+  background-color: white;
+}
+.table thead tr th{
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  opacity: 1;
+  padding: 15px;
+  vertical-align: top;
+  border: 1px solid black;
+}
+.table tbody tr td{
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+@media(max-width: 800px){
+  .table thead{
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td{
+    display: block;
+    width: 100%;
+  }
+  .table tr{
+    margin-bottom: 15px;
+  }
+  .table tbody tr td{
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .table td:before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards_item{
+  display: flex;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+@media(min-width: 800px){
+  .cards_item{
+    width: 50%;
+  }
+}
+@media(min-width: 1000px){
+  .cards_item{
+    width: 33.33333%;
+  }
+}
+@media(min-width: 1200px){
+  .cards_item{
+    width: 25%;
+  }
+}
+.card_show{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card_content{
+  margin-top: 5px;
+  padding: 15px;
+  border-top: 1px solid black;
+}
+.card_title {
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.card_text{
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;   
+}
+
